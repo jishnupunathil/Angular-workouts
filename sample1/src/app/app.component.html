@@ -1,0 +1,12 @@
+<div>
+  <h1>Hi am the root</h1>
+  {{title}}  
+  
+</div>
+
+<div class="container">
+  <input type="text" #input>
+  <button (click)="changeName(input)"> Submit</button>
+</div>
+
+<app-container [value]="inputText"></app-container>

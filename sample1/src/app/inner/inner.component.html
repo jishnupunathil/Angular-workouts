@@ -1,0 +1,16 @@
+<table>
+    <ng-content select=".head"></ng-content>
+    <tr>
+
+        <td>number</td>
+        <td>action</td>
+    </tr>
+    <td>
+        <tr *ngFor="let n of numbers">
+            <td>{{n}}</td>
+            <td>click</td>
+        </tr>
+    </td>
+    <ng-content select=".bottom"></ng-content>
+</table>
+
